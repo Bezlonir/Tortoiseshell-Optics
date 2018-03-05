@@ -1,0 +1,99 @@
+/*Tortoiseshell Optics
+A tutorial website built from
+specifications provided by
+Codecademy.*/
+
+/*universal styling*/
+.html {
+  font-family:helvetica,sans-serif;
+  background-color:azure;
+}
+
+.container {
+  display:flex;
+  width:960px;
+}
+
+/*header styling*/
+.splash {
+  background-image:url("../images/glasses-bg.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:30rem;
+  width:100%;
+  justify-content:center;
+}
+
+.splash-content {
+  height:inherit;
+  flex-direction:column;
+  align-items:center;
+
+}
+
+.header {
+  margin-top:1rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  background-color:cadetblue;
+  color:white;
+  flex-direction:row;
+  align-items:center;
+}
+
+.header img {
+  height:1.5rem;
+  width:auto;
+  /*background-image:url("../images/logo-white.png");*/
+  background-size:cover;
+
+  margin-left:2rem;
+  margin-right:1rem;
+}
+
+.header ul {
+  display:flex;
+  flex-direction:row;
+}
+
+.header li {
+  margin-right:2rem;
+}
+
+.spacer {
+  flex-grow:1;
+}
+
+.headline {
+  margin-top:10rem;
+  display:relative;
+  width:auto;
+  left:2rem;
+  padding: 1.5rem 5rem;
+  background-color:white;
+  color:black;
+  font-weight:bold;
+  line-height:1.2;
+  align-self:flex-end;
+
+}
+
+.services {
+  margin-top:3rem;
+  justify-content:center;
+}
+
+.service {
+  width:5rem;
+  margin-right:6rem;
+  height:8rem;
+}
+
+.service img {
+  width:3.5rem;
+}
+
+/*info section*/
+.info .heading {
+
+}
