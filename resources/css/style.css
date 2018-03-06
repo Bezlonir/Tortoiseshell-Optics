@@ -19,6 +19,7 @@ Codecademy.*/
   background-image:url("../images/glasses-bg.png");
   background-size:cover;
   background-repeat:no-repeat;
+  background-position:center;
   height:30rem;
   width:100%;
   justify-content:center;
@@ -41,7 +42,11 @@ Codecademy.*/
   align-items:center;
 }
 
-.header img {
+.mobile-header {
+  display:none;
+}
+
+.header img , .mobile-header img{
   height:1.5rem;
   width:auto;
   /*background-image:url("../images/logo-white.png");*/
@@ -51,12 +56,12 @@ Codecademy.*/
   margin-right:1rem;
 }
 
-.header ul {
+.header ul, .mobile-header ul {
   display:flex;
   flex-direction:row;
 }
 
-.header li {
+.header li, .mobile-header li {
   margin-right:2rem;
 }
 
@@ -78,8 +83,11 @@ Codecademy.*/
 
 }
 
+/*services styling*/
 .services {
   margin-top:3rem;
+  margin-left:auto;
+  margin-right:auto;
   justify-content:center;
 }
 
@@ -87,13 +95,168 @@ Codecademy.*/
   width:5rem;
   margin-right:6rem;
   height:8rem;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .service img {
   width:3.5rem;
+  height:auto;
 }
 
 /*info section*/
-.info .heading {
+.info-container {
+  margin-top:3rem;
+  margin-bottom:5rem;
+  flex-direction:row;
+  margin-left:auto;
+  margin-right:auto;
+}
 
+.info {
+  flex-direction:column;
+  width:35%;
+
+}
+
+.philosophy {
+  margin-right:5%;
+}
+
+.info .heading {
+  background-color:cadetblue;
+  color:white;
+  margin-bottom:1rem;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-left:1.25rem;
+  width:10rem;
+}
+
+/*footer styling*/
+footer .container {
+  margin-top:4rem;
+}
+
+footer img {
+  height:1.5rem;
+  width:auto;
+  margin-left:4rem;
+  margin-right:1rem;
+  margin-bottom:4rem;
+}
+
+/*tablet styling*/
+@media only screen and (max-width:1024px) {
+  .header {
+    display:none;
+  }
+
+  .mobile-nav {
+    display:none;
+  }
+
+  .tablet-nav {
+    display:block;
+  }
+
+  .mobile-header {
+    display:flex;
+    position:fixed;
+    margin-top:0;
+    width:100%;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    background-color:cadetblue;
+    color:white;
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .splash {
+    height:22rem;
+    background-position:center;
+  }
+
+  .headline {
+    margin-top:8rem;
+    margin-right:2rem;
+    left:0;
+    padding:0.75rem 4rem;
+    font-size:1.33rem;
+  }
+}
+
+/*mobile styling*/
+@media only screen and (max-width:480px) {
+  .container {
+    width:100%;
+  }
+
+  .mobile-nav {
+    display:block;
+  }
+
+  .tablet-nav {
+    display:none;
+  }
+
+  .splash {
+    height:17rem;
+    background-size:cover;
+    background-position:left;
+  }
+
+  .headline {
+    width:100%;
+    font-size:1rem;
+    margin:0;
+    margin-top:12rem;
+    padding:1rem 0;
+    text-align:center;
+  }
+
+  .services {
+    margin-top:3.77rem;
+    margin-left:auto;
+    margin-right:auto;
+    width:5rem;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+
+  }
+
+  .service {
+    margin-bottom:1.54rem;
+    font-size:0.77rem;
+    align-self: center;
+    margin-right:0;
+    height:auto;
+  }
+
+  .service img {
+    margin-bottom:1rem;
+  }
+
+  .philosophy {
+    margin-right:0;
+  }
+
+  .info-container {
+    margin-top:3.77rem;
+  }
+
+  .info {
+    width:100%;
+    font-size:0.77rem;
+    margin-bottom:4rem;
+  }
+
+  .heading {
+    margin-bottom:1rem;
+    width:100%;
+    text-align:center;
+  }
 }
